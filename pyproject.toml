@@ -1,0 +1,16 @@
+[project]
+name = "grokfx"
+version = "0.1.0-alpha"
+description = "Dynnovators GrokFX — Extracts and reconstructs artifacts from Grok conversations."
+authors = [{ name = "Dynnovators Studio", email = "hello@dynnovators.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["typer>=0.12.3"]
+
+[project.scripts]
+grokfx = "extractor.cli:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
